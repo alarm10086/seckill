@@ -3,49 +3,49 @@ package org.seckill.dto;
 //封装json结果
 public class SeckillResult<T> {
 
-	private boolean success;
+    private boolean success;
 
-	private T data;
+    private T data;
 
-	private String error;
+    private String error;
 
-	public SeckillResult(boolean success, String error) {
-		this.success = success;
-		this.error = error;
-	}
+    public SeckillResult(final boolean success, final String error) {
+        this.success = success;
+        this.error = error;
+    }
 
-	public SeckillResult(boolean success, T data) {
-		this.success = success;
-		this.data = data;
-	}
+    public SeckillResult(final boolean success, final T data) {
+        this.success = success;
+        this.data = data;
+    }
 
-	public boolean isSuccess() {
-		return success;
-	}
+    public boolean isSuccess() {
+        return success;
+    }
 
-	public void setSuccess(boolean success) {
-		this.success = success;
-	}
+    public void setSuccess(final boolean success) {
+        this.success = success;
+    }
 
-	public T getData() {
-		return data;
-	}
+    public T getData() {
+        return data;
+    }
 
-	public void setData(T data) {
-		this.data = data;
-	}
+    public void setData(final T data) {
+        this.data = data;
+    }
 
-	public String getError() {
-		return error;
-	}
+    public String getError() {
+        return error;
+    }
 
-	public void setError(String error) {
-		this.error = error;
-	}
+    public void setError(final String error) {
+        this.error = error;
+    }
 
-	@Override
-	public String toString() {
-		return "SeckillResult [success=" + success + ", data=" + data + ", error=" + error + "]";
-	}
+    @Override
+    public String toString() {
+        return "SeckillResult [success=" + success + ", data=" + data + ", error=" + error + "]";
+    }
 
 }
